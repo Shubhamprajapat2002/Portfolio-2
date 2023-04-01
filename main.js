@@ -89,7 +89,7 @@ let swiper = new Swiper(".portfolio__container", {
    
   });
 
-/*==================== TESTIMONIAL ====================*/
+/*==================== RESET FORM  ====================*/
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/

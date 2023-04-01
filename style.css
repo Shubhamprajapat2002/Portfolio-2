@@ -137,7 +137,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 75%; */
   height: auto;
 }
 
@@ -424,12 +424,15 @@ img {
 .button--flex{
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     padding: 2%;
     margin-top: 19px;
     
 }
 .button--small{
-    padding: .75rem 1rem;
+    font-size:  smaller;
+    padding: .15rem 
+    
 }
 
 .button--link{
@@ -761,6 +764,43 @@ img {
 }
 
 /*==================== PORTFOLIO // PROJECTS ====================*/
+
+
+   
+.card{
+    width: 25%;
+   display: inline-block;
+    border-radius: 9px;
+    margin: 50px;
+    box-shadow: 1px 1px 5px rgb(81, 72, 218);
+}
+
+.image .A{
+
+    width: 100%;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+
+.title{
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+}
+
+.des{
+    text-align: center;
+    padding: 9px;
+}
+
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 5px;
+}
     .portfolio__container{
         overflow: initial;
 
@@ -835,8 +875,51 @@ img {
     .swiper-pagination-bullet{
         outline: none;
     }
-/*==================== PROJECT IN MIND ====================*/
+/*==================== BLOGS ====================*/
 
+
+.main_blog{
+    display: flex;
+
+}
+.btn_blog{
+    justify-content: center;
+    margin-left: 70%;
+
+}
+.blog_text{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-gap: 32px;
+    gap: 32px;
+}
+
+.blog_container{
+    border-radius: 10px;
+    color: #586069;
+    background-color: #fff;
+    box-shadow: 0 0 36px rgba(0,0,0,.1);
+    cursor: pointer;
+    height: 230px;
+}
+
+.blog_title{
+    color: #262626;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 32px 20px 14px;
+    -webkit-line-clamp: 2;
+}
+.small{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #666;
+    padding: 0 20px;
+    -webkit-line-clamp: 4;
+    margin: 0;
+}
 
 /*==================== TESTIMONIAL ====================*/
 
@@ -916,6 +999,8 @@ img {
 
 .footer__subtitle{
     font-size: var(--small-font-size);
+    /* padding-left: 15px; */
+    margin-left: 15px;
 }
 
 .footer__links{
@@ -1166,9 +1251,7 @@ img {
             .about__container{
                 column-gap: 5rem;
             }
-            .about__img{
-                width: 500px;
-            }
+            
 
             .about__description{
                 text-align: initial;
@@ -1228,7 +1311,7 @@ img {
                 justify-self: flex-end;
             }
             .footer__copy{
-                margin-top: 4.5rem;
+                margin-top: 1.5rem;
             }
 }
 
