@@ -160,6 +160,7 @@ img {
 .section__title, 
 .section__subtitle {
   text-align: center;
+  margin-left: 4%;
 }
 
 /*==================== LAYOUT ====================*/
@@ -1085,11 +1086,21 @@ button{
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 450px){
+
+        
+    .card {
+        width: 75% !important;
+        display: inline-block;
+        border-radius: 9px;
+        margin: 50px;
+        box-shadow: 1px 1px 5px rgb(81, 72, 218);
+    }
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
     }
+   
     .nav__menu{
         padding: 2rem .25rem 4rem;
     }
@@ -1125,9 +1136,11 @@ button{
         padding: 0 .5rem;
 
     }
-    .project__img{
+    /* .project__img{
         width: 200px;
     }
+     */
+    
 }
 
 
@@ -1135,6 +1148,8 @@ button{
 @media screen and (min-width: 568px)
 {
 
+   
+    
     .home__content{
         grid-template-columns: max-content 1fr 1fr;
     }
@@ -1172,6 +1187,7 @@ button{
                 margin-left: auto;
                 margin-right: auto;
             }
+            
 
             body{
                 margin: 0;
@@ -1313,6 +1329,7 @@ button{
             .footer__copy{
                 margin-top: 1.5rem;
             }
+            
 }
 
 
@@ -1325,6 +1342,7 @@ button{
     .footer__container{
         padding: 0;
     }
+   
     .home__blob{
         width: 320px;
     }
